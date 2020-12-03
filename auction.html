@@ -303,6 +303,10 @@
 								<a class="nav-link p-2" id="pickOut-tab" data-toggle="tab" href="#pickOut" role="tab" aria-controls="pickOut"
 									aria-selected="false">出金</a>
 							</li>
+							<li class="nav-item">
+								<a class="nav-link p-2" id="auction-tab" data-toggle="tab" href="#auction" role="tab" aria-controls="auction"
+									aria-selected="false">拍賣市場</a>
+							</li>
 						</ul>
 						<!-- Tab_content -->
 						<div class="tab-content">
@@ -310,19 +314,19 @@
 							<div class="tab-pane active" id="usdtAccount" role="tabpanel">
 								<div class="py-4">
 									<label for="">查詢日期：</label>
-									<p class="mb-0 py-2">起</p>
+									<p class=" py-2">起</p>
 									<input type="date" class="form-control" id="">
-									<p class="mb-0 py-2">至</p>
+									<p class=" py-2">至</p>
 									<input type="date" class="form-control" id="">
 								</div>
 								<a class="btn btn-primary btn-sm">查詢</a>
-								<p class="pt-5 mb-0">查詢結果：</p>
+								<p class="pt-5 ">查詢結果：</p>
 								<span class="badge badge-success badgeFont p-2 mt-4">
 									總額：<span>20000</span>
 								</span>
 								<hr>
 								<!-- 查詢結果 -->
-								<ul class="list-unstyled py-3 mb-0">
+								<ul class="list-unstyled py-3 ">
 									<li>
 										<div class="row">
 											<div class="col-4">
@@ -394,52 +398,35 @@
 							<div class="tab-pane" id="exUsdt" role="tabpanel" aria-labelledby="upgrate-tab">
 								<div class="card">
 									<div class="card-body">
-										<form class="needs-validation" novalidate>
-											<div class="form-group">
-												<label for="">轉換類別</label>
-												<select class="register_select w-100" id="" required>
-													<option selected disabled></option>
-													<option>USDT</option>
-													<option>註冊金</option>
-													<option>購物金</option>
-												</select>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
-											</div>
+										<label for="">轉換類別</label>
+										<select class="register_select w-100" id="">
+											<option selected disabled>請選擇</option>
+											<option>USDT</option>
+											<option>註冊金</option>
+											<option>購物金</option>
+										</select>
+										<form>
 											<div class="form-group">
 												<label for="">轉出點數</label>
-												<input type="number" class="form-control form-control-sm" id="" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
+												<input type="number" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="">
 											</div>
 											<div class="form-group">
 												<label for="">轉至會員帳號</label>
-												<input type="text" class="form-control form-control-sm" id="" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
+												<input type="text" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="">
 											</div>
 											<div class="form-group">
 												<label for="">二級密碼</label>
-												<input type="password" class="form-control form-control-sm" id="" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
+												<input type="password" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="">
 											</div>
 											<div class="form-group">
 												<label for="">驗證碼</label>
-												<input type="number" class="form-control form-control-sm" id="" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
+												<input type="number" class="form-control form-control-sm" id="" placeholder="">
 											</div>
 											<div class="form-group">
 												<span class="help-inline">
 													<img src="" width="71" height="24">
 												</span>
-												<p class="mb-0 pt-3" style="color:red">USDT轉出 手續費 10 %</p>
+												<p class=" pt-3" style="color:red">USDT轉出 手續費 10 %</p>
 											</div>
 											<button type="submit" class="btn btn-primary btn-sm">轉出</button>
 										</form>
@@ -447,16 +434,16 @@
 								</div>
 								<div class="py-4">
 									<label for="">查詢日期：</label>
-									<p class="mb-0 py-2">起</p>
+									<p class=" py-2">起</p>
 									<input type="date" class="form-control" id="">
-									<p class="mb-0 py-2">至</p>
+									<p class=" py-2">至</p>
 									<input type="date" class="form-control" id="">
 								</div>
 								<a class="btn btn-primary btn-sm">查詢</a>
 								<div class="py-4">
 									<label for="">USDT轉出紀錄：</label>
 									<hr>
-									<ul class="list-unstyled py-3 mb-0">
+									<ul class="list-unstyled py-3 ">
 										<li>
 											<div class="row">
 												<div class="col-4">
@@ -500,19 +487,19 @@
 							<div class="tab-pane" id="register" role="tabpanel" aria-labelledby="register-tab">
 								<div class="py-4">
 									<label for="">查詢日期：</label>
-									<p class="mb-0 py-2">起</p>
+									<p class=" py-2">起</p>
 									<input type="date" class="form-control" id="">
-									<p class="mb-0 py-2">至</p>
+									<p class=" py-2">至</p>
 									<input type="date" class="form-control" id="">
 								</div>
 								<a class="btn btn-primary btn-sm">查詢</a>
-								<p class="pt-5 mb-0">查詢結果：</p>
+								<p class="pt-5 ">查詢結果：</p>
 								<span class="badge badge-success badgeFont p-2 mt-4">
 									總額：<span>20000</span>
 								</span>
 								<hr>
 								<!-- 查詢結果 -->
-								<ul class="list-unstyled py-3 mb-0">
+								<ul class="list-unstyled py-3 ">
 									<li>
 										<div class="row">
 											<div class="col-4">
@@ -589,40 +576,28 @@
 										</span>
 									</div>
 									<div class="card-body">
-										<form class="needs-validation" novalidate>
+										<form>
 											<div class="form-group">
 												<label for="">轉出點數</label>
-												<input type="number" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
+												<input type="number" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="">
 											</div>
 											<div class="form-group">
 												<label for="">轉至會員帳號</label>
-												<input type="text" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
+												<input type="text" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="">
 											</div>
 											<div class="form-group">
 												<label for="">二級密碼</label>
-												<input type="password" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
+												<input type="password" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="">
 											</div>
 											<div class="form-group">
 												<label for="">驗證碼</label>
-												<input type="number" class="form-control form-control-sm" id="" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
+												<input type="number" class="form-control form-control-sm" id="" placeholder="">
 											</div>
 											<div class="form-group">
 												<span class="help-inline">
 													<img src="" width="71" height="24">
 												</span>
-												<p class="mb-0 pt-3" style="color:red">註冊金轉出 手續費 10 %</p>
+												<p class=" pt-3" style="color:red">註冊金轉出 手續費 10 %</p>
 											</div>
 											<button type="submit" class="btn btn-primary btn-sm">轉出</button>
 										</form>
@@ -630,16 +605,16 @@
 								</div>
 								<div class="py-4">
 									<label for="">查詢日期：</label>
-									<p class="mb-0 py-2">起</p>
+									<p class=" py-2">起</p>
 									<input type="date" class="form-control" id="">
-									<p class="mb-0 py-2">至</p>
+									<p class=" py-2">至</p>
 									<input type="date" class="form-control" id="">
 								</div>
 								<a class="btn btn-primary btn-sm">查詢</a>
 								<div class="py-4">
 									<label for="">註冊金轉出紀錄：</label>
 									<hr>
-									<ul class="list-unstyled py-3 mb-0">
+									<ul class="list-unstyled py-3 ">
 										<li>
 											<div class="row">
 												<div class="col-4">
@@ -683,19 +658,19 @@
 							<div class="tab-pane" id="shopping" role="tabpanel" aria-labelledby="shopping-tab">
 								<div class="py-4">
 									<label for="">查詢日期：</label>
-									<p class="mb-0 py-2">起</p>
+									<p class=" py-2">起</p>
 									<input type="date" class="form-control" id="">
-									<p class="mb-0 py-2">至</p>
+									<p class=" py-2">至</p>
 									<input type="date" class="form-control" id="">
 								</div>
 								<a class="btn btn-primary btn-sm">查詢</a>
-								<p class="pt-5 mb-0">查詢結果：</p>
+								<p class="pt-5 ">查詢結果：</p>
 								<span class="badge badge-success badgeFont p-2 mt-4">
 									總額：<span>20000</span>
 								</span>
 								<hr>
 								<!-- 查詢結果 -->
-								<ul class="list-unstyled py-3 mb-0">
+								<ul class="list-unstyled py-3 ">
 									<li>
 										<div class="row">
 											<div class="col-4">
@@ -767,40 +742,28 @@
 							<div class="tab-pane" id="exShopping" role="tabpanel" aria-labelledby="exShopping-tab">
 								<div class="card">
 									<div class="card-body">
-										<form class="needs-validation" novalidate>
+										<form>
 											<div class="form-group">
 												<label for="">轉出點數</label>
-												<input type="number" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
+												<input type="number" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="">
 											</div>
 											<div class="form-group">
 												<label for="">轉至會員帳號</label>
-												<input type="text" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
+												<input type="text" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="">
 											</div>
 											<div class="form-group">
 												<label for="">二級密碼</label>
-												<input type="password" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
+												<input type="password" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="">
 											</div>
 											<div class="form-group">
 												<label for="">驗證碼</label>
-												<input type="number" class="form-control form-control-sm" id="" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
+												<input type="number" class="form-control form-control-sm" id="" placeholder="">
 											</div>
 											<div class="form-group">
 												<span class="help-inline">
 													<img src="" width="71" height="24">
 												</span>
-												<p class="mb-0 pt-3" style="color:red">購物金轉出 手續費 10 %</p>
+												<p class=" pt-3" style="color:red">購物金轉出 手續費 10 %</p>
 											</div>
 											<button type="submit" class="btn btn-primary btn-sm">轉出</button>
 										</form>
@@ -808,16 +771,16 @@
 								</div>
 								<div class="py-4">
 									<label for="">查詢日期：</label>
-									<p class="mb-0 py-2">起</p>
+									<p class=" py-2">起</p>
 									<input type="date" class="form-control" id="">
-									<p class="mb-0 py-2">至</p>
+									<p class=" py-2">至</p>
 									<input type="date" class="form-control" id="">
 								</div>
 								<a class="btn btn-primary btn-sm">查詢</a>
 								<div class="py-4">
 									<label for="">註冊金轉出紀錄：</label>
 									<hr>
-									<ul class="list-unstyled py-3 mb-0">
+									<ul class="list-unstyled py-3 ">
 										<li>
 											<div class="row">
 												<div class="col-4">
@@ -863,10 +826,10 @@
 									<div class="card-body">
 										<div class="border p-2">
 											<label for="">出金規則：</label>
-											<p class="mb-0">(1) 會員USDT須超過 100 USDT才可申請出金。</p>
-											<p class="mb-0">(2) 出金手續費<span class="bg-danger text-white px-2">10%</span>由會員負擔。</p>
-											<p class="mb-0">(3) 因IE瀏覽器與系統相容狀況不良，請會員盡量使用不同的瀏覽器開啟本系統。</p>
-											<p class="mb-0">(4) 會員所填寫資料若不完整或錯誤者，導致無法正常匯出而造成交易不成功，系統管理員確認完畢後，
+											<p class="">(1) 會員USDT須超過 100 USDT才可申請出金。</p>
+											<p class="">(2) 出金手續費<span class="bg-danger text-white px-2">10%</span>由會員負擔。</p>
+											<p class="">(3) 因IE瀏覽器與系統相容狀況不良，請會員盡量使用不同的瀏覽器開啟本系統。</p>
+											<p class="">(4) 會員所填寫資料若不完整或錯誤者，導致無法正常匯出而造成交易不成功，系統管理員確認完畢後，
 												將直接取消此次交易，原扣除之USDT則會補回會員帳號。</p>
 										</div>
 										<div class="py-3">
@@ -938,55 +901,37 @@
 											</select>
 											<label for="">個</label>
 										</div>
-										<form class="needs-validation" novalidate>
-											<div class="form-group">
-												<label for="">USDT錢包地址：</label>
-												<input type="text" class="form-control" id="" placeholder="請輸入個人轉帳地址備查" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
-											</div>
-											<div class="form-group">
-												<label for="">UID號碼：</label>
-												<input type="text" class="form-control" id="" placeholder="請輸入王牌交易所會員帳號備查" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
-											</div>
-											<div class="form-group">
-												<label for="">二級密碼</label>
-												<input type="password" class="form-control" id="" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
-											</div>
-											<div class="form-group">
-												<label for="">驗證碼</label>
-												<input type="number" class="form-control" id="" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
-											</div>
-											<div class="form-group">
-												<span class="help-inline">
-													<img src="" width="71" height="24">
-												</span>
-											</div>
-											<button type="submit" class="btn btn-primary btn-sm">送出申請</button>
-										</form>
+										<div class="py-3">
+											<label for="">USDT錢包地址：</label>
+											<input type="text" class="form-control" id="" placeholder="請輸入個人轉帳地址備查">
+										</div>
+										<div class="py-3">
+											<label for="">UID號碼：</label>
+											<input type="text" class="form-control" id="" placeholder="請輸入王牌交易所會員帳號備查">
+										</div>
+										<div class="py-3">
+											<label for="">二級密碼</label>
+											<input type="password" class="form-control" id="" placeholder="">
+										</div>
+										<div class="py-3">
+											<label for="">驗證碼</label>
+											<input type="number" class="form-control" id="" placeholder="">
+										</div>
+										<div class="py-3">
+											<span class="help-inline">
+												<img src="" width="71" height="24">
+											</span>
+										</div>
 									</div>
 								</div>
-								<!-- 查詢 -->
-								<div class="py-4">
+								<div class="py-3">
 									<label for="">查詢日期：</label>
-									<p class="mb-0 py-2">起</p>
+									<p class=" py-2">起</p>
 									<input type="date" class="form-control" id="" placeholder="">
-									<p class="mb-0 py-2">至</p>
+									<p class=" py-2">至</p>
 									<input type="date" class="form-control" id="" placeholder="">
 								</div>
-								<a class="btn btn-primary btn-sm">查詢</a>
-								<!-- 紀錄 -->
-								<div class="py-4">
+								<div class="py-3">
 									<p>出金紀錄：</p>
 									<hr>
 									<ul class="list-unstyled">
@@ -1026,6 +971,158 @@
 											</li>
 										</ul>
 									</nav>
+								</div>
+							</div>
+							<!-- 拍賣市場 -->
+							<div class="tab-pane " id="auction" role="tabpanel" aria-labelledby="auction-tab">
+								<div class="card">
+									<div class="card-body">
+										<div class="border p-2">
+											<label for="">USDT儲值規則：</label>
+											<p>(1) 會員儲值購買USDT超過1,000點者，即可申請儲值，並以每千點為整數。</p>
+											<p>(2) 目前儲值方式開放USDT錢包儲值；會員款項確定處理完成後，請點擊【我已儲值】按鈕並按下確定。</p>
+											<p>(3) 公司確認收到款項後，系統將立即打入USDT至您指定的會員帳號。</p>
+										</div>
+										<div class="py-3">
+											<label for="">購買USDT：</label>
+											<br>
+											<select class="register_select" id="">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+											</select>
+											<label for="">百萬</label>
+											<hr>
+											<select class="register_select" id="">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+											</select>
+											<label for="">十萬</label>
+											<hr>
+											<select class="register_select" id="">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+											</select>
+											<label for="">萬</label>
+											<hr>
+											<select class="register_select" id="">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+											</select>
+											<label for="">千</label>
+											<hr>
+											<select class="register_select" id="">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+											</select>
+											<label for="">百</label>
+										</div>
+										<div class="py-3">
+											<label for="">公司USDT錢包地址：</label>
+											<br>
+											<p class="badge badge-info p-2" style="font-size: 15px;">0wefefn3jktnkj4wtbkq</p>
+										</div>
+										<div class="py-3">
+											<label for="">個人USDT錢包地址：</label>
+											<input type="text" class="form-control" id="" placeholder="請輸入個人轉帳地址備查">
+										</div>
+							
+										<!-- btn -->
+										<button type="submit" class="btn btn-primary btn-sm">立即儲值</button>
+							
+										<div class="py-3">
+											<label for="">個人USDT錢包地址：</label>
+											<input type="text" class="form-control" id="" placeholder="請輸入個人轉帳地址備查">
+										</div>
+										<div class="py-3">
+											<label for="">查詢日期：</label>
+											<p class=" py-2">起</p>
+											<input type="date" class="form-control" id="" placeholder="">
+											<p class=" py-2">至</p>
+											<input type="date" class="form-control" id="" placeholder="">
+										</div>
+										<div class="py-3">
+											<p>儲值紀錄：</p>
+											<div class="register_saveArea">
+												<ul class="list-unstyled">
+													<li>
+														<div class="card">
+															<div class="card-header text-white" style="background-color: #e1a421;">
+																交易時間：
+																<span class="h6">2020/12/1</span>
+															</div>
+															<div class="card-body">
+																<div class="row d-flex">
+																	<div class="col-12 py-2 px-4">
+																		<span class="badge badge-success py-2 mb-2">設定已儲值：<span>是</span></span>
+																		<p>儲值USDT：<span class="h6">2000</span> $ </p>
+																		<p>狀態：<span></span></p>
+																		<p>備註：<span></span></p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<nav class="d-flex justify-content-center">
+												<ul class="pagination pagination-sm">
+													<li class="page-item">
+														<a class="page-link" href="#" aria-label="Previous">
+															<span aria-hidden="true">&laquo;</span>
+														</a>
+													</li>
+													<li class="page-item"><a class="page-link" href="#">1</a></li>
+													<li class="page-item"><a class="page-link" href="#">2</a></li>
+													<li class="page-item"><a class="page-link" href="#">3</a></li>
+													<li class="page-item">
+														<a class="page-link" href="#" aria-label="Next">
+															<span aria-hidden="true">&raquo;</span>
+														</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1078,7 +1175,7 @@
 					<input type="checkbox" id="darklayout" name="darkmode">
 					<label for="darklayout">Dark</label>
 				</div>
-				<div class="selectoption mb-0">
+				<div class="selectoption ">
 					<input type="checkbox" id="rtllayout" name="layoutrtl">
 					<label for="rtllayout">RTL</label>
 				</div>
@@ -1173,7 +1270,6 @@
 
 
 	<!-- page level custom script -->
-	<script src="js/validated.js"></script>
 	<script src="js/app.js"></script>
 
 </body>

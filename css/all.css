@@ -5,10 +5,18 @@
     padding: 0.5rem 1.5rem;
     
 }
+.badgeFont {
+    font-size: 16px;
+}
 .register_select{
     width: 25%;
     padding: 0.5rem;
     margin: 5px 0;
+}
+.register_select_product{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 .register_saveArea{
     -webkit-box-shadow: 0 0 10px #dedede;
