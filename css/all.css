@@ -1,0 +1,17 @@
+.news_space > li{
+    padding: 10px 0px;
+}
+.profile_nav > li > a{
+    padding: 0.5rem 1.5rem;
+    
+}
+.register_select{
+    width: 25%;
+    padding: 0.5rem;
+    margin: 5px 0;
+}
+.register_saveArea{
+    -webkit-box-shadow: 0 0 10px #dedede;
+    -moz-box-shadow: 0 0 10px #dedede;
+    box-shadow: 0 0 10px #dedede;
+}
