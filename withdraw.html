@@ -251,32 +251,123 @@
 				<!-- Tab -->
 				<div class="card">
 					<div class="card-body">
-						<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<ul class="nav nav-tabs pb-3" id="myTab" role="tablist">
 							<li class="nav-item">
-								<a class="nav-link active p-2" id="register-tab" data-toggle="tab" href="#register" role="tab"
-									aria-controls="register" aria-selected="true">註冊</a>
+								<a class="nav-link active p-2" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab"
+									aria-controls="tab1" aria-selected="true">出金</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link p-2" id="upgrate-tab" data-toggle="tab" href="#upgrate" role="tab" aria-controls="upgrate"
-									aria-selected="false">升級與複投</a>
+								<a class="nav-link p-2" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"
+									aria-selected="true">娛樂城出金</a>
 							</li>
 						</ul>
 						<!-- Tab_content -->
 						<div class="tab-content">
-							<div class="tab-pane active" id="register" role="tabpanel">
+							<div class="tab-pane active" id="tab1" role="tabpanel">
 								<div class="card">
 									<div class="card-body">
+										<div class="border p-2">
+											<label for="">出金規則：</label>
+											<p class="mb-0">(1) 會員USDT須超過 100 USDT才可申請出金。</p>
+											<p class="mb-0">(2) 出金手續費<span class="bg-danger text-white px-2">10%</span>由會員負擔。</p>
+											<p class="mb-0">(3) 因IE瀏覽器與系統相容狀況不良，請會員盡量使用不同的瀏覽器開啟本系統。</p>
+											<p class="mb-0">(4) 會員所填寫資料若不完整或錯誤者，導致無法正常匯出而造成交易不成功，系統管理員確認完畢後，
+												將直接取消此次交易，原扣除之USDT則會補回會員帳號。</p>
+										</div>
+										<div class="py-3">
+											<label for="">出金USDT：</label>
+											<br>
+											<select class="p-2" id="">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+											</select>
+											<label for="">萬</label>
+											<select class="p-2" id="">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+											</select>
+											<label for="">千</label>
+											<select class="p-2" id="">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+											</select>
+											<label for="">百</label>
+											<select class="p-2" id="">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+											</select>
+											<label for="">十</label>
+											<select class="p-2" id="">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+											</select>
+											<label for="">個</label>
+										</div>
 										<form class="needs-validation" novalidate>
 											<div class="form-group">
-												<label for=""><span style="color:red;">*</span>二級密碼</label>
-												<input type="password" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="" required>
+												<label for="">USDT錢包地址：</label>
+												<input type="text" class="form-control" id="" placeholder="請輸入個人轉帳地址備查" required>
 												<div class="invalid-feedback">
 													請輸入此欄位
 												</div>
 											</div>
 											<div class="form-group">
-												<label for=""><span style="color:red;">*</span>驗證碼</label>
-												<input type="number" class="form-control form-control-sm" id="" placeholder="" required>
+												<label for="">UID號碼：</label>
+												<input type="text" class="form-control" id="" placeholder="請輸入王牌交易所會員帳號備查" required>
+												<div class="invalid-feedback">
+													請輸入此欄位
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="">二級密碼</label>
+												<input type="password" class="form-control" id="" placeholder="" required>
+												<div class="invalid-feedback">
+													請輸入此欄位
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="">驗證碼</label>
+												<input type="text" class="form-control" id="" placeholder="" required>
 												<div class="invalid-feedback">
 													請輸入此欄位
 												</div>
@@ -286,95 +377,230 @@
 													<img src="" width="71" height="24">
 												</span>
 											</div>
-											<div class="form-group">
-												<label for=""><span style="color:red;">*</span>暱稱</label>
-												<input type="text" class="form-control form-control-sm" id="" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
-											</div>
-											<div class="form-group">
-												<label for=""><span style="color:red;">*</span>介紹人編號</label>
-												<input type="password" class="form-control form-control-sm" id="" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
-											</div>
-											<div class="form-group">
-												<label for=""><span style="color:red;">*</span>安置人編號</label>
-												<input type="password" class="form-control form-control-sm" id="" placeholder="" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
-											</div>
-											<div class="form-group">
-												<label for="">安置位置</label>
-												<select class="form-control form-control-sm">
-													<option>左線</option>
-													<option>右線</option>
-												</select>
-											</div>
-											<div class="form-group">
-												<label for="">購買產品</label>
-												<br>
-												<select class="register_select_product" id="" required>
-													<option selected disabled></option>
-													<option value="">鐵*300(180%)</option>
-													<option value="">銅級*1000(180%)</option>
-													<option value="">銀級*2000(250%)</option>
-													<option value="">金級*6000(320%)</option>
-													<option value="">鑽石*10000(400%)</option>
-												</select>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
-											</div>
-											<div class="form-group">
-												<label for="">註冊金使用</label>
-												<input type="password" class="form-control form-control-sm" id="" placeholder="">
-											</div>
-											<div class="form-group">
-												<label for="">USDT使用</label>
-												<input type="password" class="form-control form-control-sm" id="" placeholder="">
-											</div>
-											<div class="form-group">
-												<label for=""><span style="color:red;">*</span>會員護照號碼/身分證號</label>
-												<input type="password" class="form-control form-control-sm" id="" placeholder="請輸入護照號碼/身份證號" required>
-												<small style="color:red;">同一個證件號碼只能註冊3次</small>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
-											</div>
-											<div class="form-group">
-												<p class="mb-0 pt-2" for="">會員帳號</p>
-												<span class="badge badge-info p-2" style="font-size: 12px;">系統自動產出</span>
-												<p class="mb-0 pt-2" for="">密碼</p>
-												<span class="badge badge-info p-2" style="font-size: 12px;">[預設為a1234]</span>
-												<p class="mb-0 pt-2" for="">二級密碼</p>
-												<span class="badge badge-info p-2" style="font-size: 12px;">[預設為a1234]</span>
-											</div>
-											<div class="form-group">
-												<label for=""><span style="color:red;">*</span>信箱</label>
-												<input type="email" class="form-control form-control-sm" id="" placeholder="E-mail" required>
-												<div class="invalid-feedback">
-													請輸入此欄位
-												</div>
-											</div>
-											<div class="form-group">
-												<label for="">備註</label>
-												<textarea class="form-control" id="" placeholder=""></textarea>
-											</div>
-											<button type="submit" class="btn btn-primary btn-sm">儲存</button>
-											<button type="button" class="btn btn-secondary btn-sm">取消</button>
+											<button type="submit" class="btn btn-primary btn-sm">送出申請</button>
 										</form>
 									</div>
 								</div>
+								<!-- 查詢 -->
+								<div class="py-4">
+									<label for="">查詢日期：</label>
+									<p class="mb-0 py-2">起</p>
+									<input type="date" class="form-control" id="" placeholder="">
+									<p class="mb-0 py-2">至</p>
+									<input type="date" class="form-control" id="" placeholder="">
+								</div>
+								<a class="btn btn-primary btn-sm">查詢</a>
+								<!-- 紀錄 -->
+								<div class="py-4">
+									<p>出金紀錄：</p>
+									<hr>
+									<ul class="list-unstyled">
+										<li>
+											<div class="row">
+												<div class="col-4">
+													<div class="py-2">
+														<h6>2020/12/1</h6>
+														<h6>18:00</h6>
+													</div>
+												</div>
+												<div class="col-8 align-self-center">
+													<h6>
+														USDT：-
+														<span>2000.00</span>
+													</h6>
+													<span class="badge badge-info p-2 mx-1">出金中</span>
+												</div>
+											</div>
+											<hr>
+										</li>
+									</ul>
+									<nav class="d-flex justify-content-center">
+										<ul class="pagination pagination-sm">
+											<li class="page-item">
+												<a class="page-link" href="#" aria-label="Previous">
+													<span aria-hidden="true">&laquo;</span>
+												</a>
+											</li>
+											<li class="page-item"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item">
+												<a class="page-link" href="#" aria-label="Next">
+													<span aria-hidden="true">&raquo;</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
 							</div>
-							<div class="tab-pane" id="upgrate" role="tabpanel" aria-labelledby="upgrate-tab">
+							<div class="tab-pane" id="tab2" role="tabpanel">
 								<div class="card">
 									<div class="card-body">
-										<p>您尚未符合資格，目前您累積獎勵尚未滿倉</p>
+										<div class="border p-2">
+											<label for="">出金娛樂城規則：</label>
+											<p class="mb-0">(1) 會員USDT須超過 100 USDT才可申請出金。</p>
+											<p class="mb-0">(2) 出金手續費<span class="bg-danger text-white px-2">10%</span>由會員負擔。</p>
+											<p class="mb-0">(3) 因IE瀏覽器與系統相容狀況不良，請會員盡量使用不同的瀏覽器開啟本系統。</p>
+											<p class="mb-0">(4) 會員所填寫資料若不完整或錯誤者，導致無法正常匯出而造成交易不成功，系統管理員確認完畢後
+												，將直接取消此次交易，原扣除之USDT則會補回會員帳號。</p>
+										</div>
+										<div class="py-3">
+											<label for="">出金USDT：</label>
+											<br>
+											<select class="p-2" id="">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+											</select>
+											<label for="">萬</label>
+											<select class="p-2" id="">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+											</select>
+											<label for="">千</label>
+											<select class="p-2" id="">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+											</select>
+											<label for="">百</label>
+											<select class="p-2" id="">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+											</select>
+											<label for="">十</label>
+											<select class="p-2" id="">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+											</select>
+											<label for="">個</label>
+										</div>
+										<form class="needs-validation" novalidate>
+											<div class="form-group">
+												<label for="">USDT錢包地址：</label>
+												<input type="text" class="form-control" id="" placeholder="請輸入個人轉帳地址備查" required>
+												<div class="invalid-feedback">
+													請輸入此欄位
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="">UID號碼：</label>
+												<input type="text" class="form-control" id="" placeholder="請輸入王牌交易所會員帳號備查" required>
+												<div class="invalid-feedback">
+													請輸入此欄位
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="">二級密碼</label>
+												<input type="password" class="form-control" id="" placeholder="" required>
+												<div class="invalid-feedback">
+													請輸入此欄位
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="">驗證碼</label>
+												<input type="text" class="form-control" id="" placeholder="" required>
+												<div class="invalid-feedback">
+													請輸入此欄位
+												</div>
+											</div>
+											<div class="form-group">
+												<span class="help-inline">
+													<img src="" width="71" height="24">
+												</span>
+											</div>
+											<button type="submit" class="btn btn-primary btn-sm">送出申請</button>
+										</form>
 									</div>
+								</div>
+								<!-- 查詢 -->
+								<div class="py-4">
+									<label for="">查詢日期：</label>
+									<p class="mb-0 py-2">起</p>
+									<input type="date" class="form-control" id="" placeholder="">
+									<p class="mb-0 py-2">至</p>
+									<input type="date" class="form-control" id="" placeholder="">
+								</div>
+								<a class="btn btn-primary btn-sm">查詢</a>
+								<!-- 紀錄 -->
+								<div class="py-4">
+									<p>出金紀錄：</p>
+									<hr>
+									<ul class="list-unstyled">
+										<li>
+											<div class="row">
+												<div class="col-4">
+													<div class="py-2">
+														<h6>2020/12/1</h6>
+														<h6>18:00</h6>
+													</div>
+												</div>
+												<div class="col-8 align-self-center">
+													<h6>
+														USDT：-
+														<span>2000.00</span>
+													</h6>
+													<span class="badge badge-info p-2 mx-1">出金中</span>
+												</div>
+											</div>
+											<hr>
+										</li>
+									</ul>
+									<nav class="d-flex justify-content-center">
+										<ul class="pagination pagination-sm">
+											<li class="page-item">
+												<a class="page-link" href="#" aria-label="Previous">
+													<span aria-hidden="true">&laquo;</span>
+												</a>
+											</li>
+											<li class="page-item"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item">
+												<a class="page-link" href="#" aria-label="Next">
+													<span aria-hidden="true">&raquo;</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
 								</div>
 							</div>
 						</div>
@@ -489,6 +715,7 @@
 			<input type="radio" id="templatecolor14" name="sidebarcolorselect">
 			<label for="templatecolor14" class="bg-gray" data-title="gray"></label>
 		</div>
+
 	</div>
 
 
@@ -515,7 +742,6 @@
 
 
 	<!-- page level custom script -->
-	<script src="js/validated.js"></script>
 	<script src="js/app.js"></script>
 
 </body>

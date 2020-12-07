@@ -1,3 +1,8 @@
+.wallet_dollar{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(252, 181, 2);
+}
 .news_space > li{
     padding: 10px 0px;
 }
@@ -10,7 +15,7 @@
 }
 .register_select{
     width: 25%;
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 5px 0;
 }
 .register_select_product{
