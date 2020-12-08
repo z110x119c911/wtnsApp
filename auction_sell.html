@@ -326,61 +326,87 @@
                   <img src="" width="71" height="24">
                 </span>
               </div>
-              <button type="submit" class="btn btn-primary btn-sm">送出申請</button>
+              <div class="form-group text-right">
+                <button type="submit" class="btn btn-primary btn-sm">送出申請</button>
+              </div>
             </form>
           </div>
         </div>
         <!-- 查詢 -->
-        <div class="py-4">
+        <div class="py-5">
           <label for="">查詢日期：</label>
           <p class="mb-0 py-2">起</p>
           <input type="date" class="form-control" id="" placeholder="">
           <p class="mb-0 py-2">至</p>
           <input type="date" class="form-control" id="" placeholder="">
         </div>
-        <a class="btn btn-primary btn-sm">查詢</a>
+        <a class="btn btn-primary btn-sm w-100">查詢</a>
         <!-- 紀錄 -->
-        <div class="py-4">
-          <p>我的拍賣：</p>
-          <hr>
-          <ul class="list-unstyled">
-            <li>
-              <div class="row">
-                <div class="col-4">
-                  <div class="py-2">
-                    <h6>2020/12/1</h6>
-                    <h6>18:00</h6>
-                  </div>
-                </div>
-                <div class="col-8 align-self-center">
-                  <h6>
-                    拍賣USDT：-
-                    <span>2000.00</span>
-                  </h6>
-                  <span class="badge badge-secondary p-2 mx-1">拍賣中</span>
-                </div>
-              </div>
+        <div class="py-5">
+          <div class="card">
+            <div class="card-header pb-0">
+              <p>我的拍賣：</p>
               <hr>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li>
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="py-2">
+                        <h6>2020/12/1</h6>
+                        <h6>18:00</h6>
+                      </div>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <span class="badge badge-secondary p-2 my-3">拍賣中</span>
+                      <h6>
+                        拍賣USDT：-
+                        <span>2000.00</span>
+                      </h6>
+                    </div>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="py-2">
+                        <h6>2020/12/1</h6>
+                        <h6>18:00</h6>
+                      </div>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <span class="badge badge-secondary p-2 my-3">拍賣中</span>
+                      <h6>
+                        拍賣USDT：-
+                        <span>2000.00</span>
+                      </h6>
+                    </div>
+                  </div>
+                  <hr>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <nav class="d-flex justify-content-center">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
             </li>
           </ul>
-          <nav class="d-flex justify-content-center">
-            <ul class="pagination pagination-sm">
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        </nav>
       </div>
     </div>
   </main>
