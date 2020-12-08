@@ -207,118 +207,214 @@
 										class="material-icons">add_business</span></a>
 								<p class="text-secondary"><small>我要拍賣</small></p>
 							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<a href="auction_buy.html" class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><span
+										class="material-icons">add_business</span></a>
+								<p class="text-secondary"><small>我要收購</small></p>
+							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container mb-2 text-right">
+				<div class="dropdown">
+					<button class="btn btn-sm btn-secondary dropdown-toggle" 
+					type="button" id="dropdownMenu2" data-toggle="dropdown">
+						只顯示類別
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+						<button class="dropdown-item" type="button">USDT</button>
+						<button class="dropdown-item" type="button">重消金</button>
+						<button class="dropdown-item" type="button">註冊金</button>
 					</div>
 				</div>
 			</div>
 			<!-- 拍賣專區 -->
 			<div class="container mb-4">
-				<div class="py-4">
-					<label for="">查詢日期：</label>
-					<p class="mb-0 py-2">起</p>
-					<input type="date" class="form-control" id="">
-					<p class="mb-0 py-2">至</p>
-					<input type="date" class="form-control" id="">
-				</div>
-				<a class="btn btn-primary btn-sm w-100">查詢</a>
-				<div class="py-5">
-					<div class="card">
-						<div class="card-header">
-							<p class="mb-0">目前拍賣：</p>
-							<hr>
+				<!-- Tab -->
+				<div class="card">
+					<div class="card-body">
+						<ul class="nav nav-tabs pb-3" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active p-2" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1"
+									aria-selected="true">拍賣專區</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link p-2" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"
+									aria-selected="true">收購專區</a>
+							</li>
+						</ul>
+						<!-- Tab_content -->
+						<div class="tab-content">
+							<!-- 拍賣區 -->
+							<div class="tab-pane fade show active" id="tab1" role="tabpanel">
+								<div class="card">
+									<div class="card-body">
+										<ul class="list-unstyled mb-0">
+											<li>
+												<div class="row flex-column">
+													<div class="col py-2">
+														<small>上架時間：<span>2020/12/1 18:00</span></small>
+														<div class="d-flex align-items-center py-2">
+															拍賣品項：
+															<span class="badge badge-info p-2">重消金</span>
+															<p class="px-2"><span>2000.00</span> USDT </p>
+														</div>
+													</div>
+													<div class="col pt-1 align-self-center text-right">
+														<h6>
+															售價：
+															<span>2100.00</span> USDT
+														</h6>
+														<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#buyProduct">
+															購買
+														</button>
+													</div>
+												</div>
+												<hr>
+											</li>
+											<li>
+												<div class="row flex-column">
+													<div class="col py-2">
+														<small>上架時間：<span>2020/12/1 18:00</span></small>
+														<div class="d-flex align-items-center py-2">
+															拍賣品項：
+															<span class="badge badge-info p-2">重消金</span>
+															<p class="px-2"><span>2000.00</span> USDT </p>
+														</div>
+													</div>
+													<div class="col pt-1 align-self-center text-right">
+														<h6>
+															售價：
+															<span>2100.00</span> USDT
+														</h6>
+														<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#buyProduct">
+															購買
+														</button>
+													</div>
+												</div>
+												<hr>
+											</li>
+										</ul>
+										<nav class="d-flex justify-content-center">
+											<ul class="pagination pagination-sm">
+												<li class="page-item">
+													<a class="page-link" href="#" aria-label="Previous">
+														<span aria-hidden="true">&laquo;</span>
+													</a>
+												</li>
+												<li class="page-item"><a class="page-link" href="#">1</a></li>
+												<li class="page-item"><a class="page-link" href="#">2</a></li>
+												<li class="page-item"><a class="page-link" href="#">3</a></li>
+												<li class="page-item">
+													<a class="page-link" href="#" aria-label="Next">
+														<span aria-hidden="true">&raquo;</span>
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+							<!-- 收購區 -->
+							<div class="tab-pane fade" id="tab2" role="tabpanel">
+								<div class="card">
+									<div class="card-body">
+										<ul class="list-unstyled">
+											<li>
+												<div class="row flex-column">
+													<div class="col py-2">
+														<small>上架時間：<span>2020/12/1 18:00</span></small>
+														<div class="d-flex align-items-center py-2">
+															收購品項：
+															<span class="badge badge-info p-2">重消金</span>
+															<p class="px-2"><span>2000.00</span> USDT </p>
+														</div>
+													</div>
+													<div class="col pt-1 align-self-center text-right">
+														<h6>
+															收購價：
+															<span>2100.00</span> USDT
+														</h6>
+														<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#sellProduct">
+															我要賣
+														</button>
+													</div>
+												</div>
+												<hr>
+											</li>
+										</ul>
+									</div>
+									<div class="card-footer">
+										<nav class="d-flex justify-content-center">
+											<ul class="pagination pagination-sm">
+												<li class="page-item">
+													<a class="page-link" href="#" aria-label="Previous">
+														<span aria-hidden="true">&laquo;</span>
+													</a>
+												</li>
+												<li class="page-item"><a class="page-link" href="#">1</a></li>
+												<li class="page-item"><a class="page-link" href="#">2</a></li>
+												<li class="page-item"><a class="page-link" href="#">3</a></li>
+												<li class="page-item">
+													<a class="page-link" href="#" aria-label="Next">
+														<span aria-hidden="true">&raquo;</span>
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="card-body">
-							<!-- 查詢結果 -->
-							<ul class="list-unstyled mb-0">
-								<li>
-									<div class="row flex-column">
-										<div class="col py-2">
-											<p>上架時間：<span>2020/12/1 18:00</span></p>
-											<div class="d-flex align-items-center">
-												拍賣品項：
-												<span class="badge badge-info p-2">重消金</span>
-												<p class="px-2"><span>2000.00</span> USDT </p>
-											</div>
-										</div>
-										<div class="col pt-3 align-self-center text-right">
-												<h6>
-													售價：
-													<span>2100.00</span> USDT
-												</h6>
-												<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#buyProduct">
-													購買
-												</button>
-										</div>
+						<!-- modal_buy -->
+						<div class="modal fade" id="buyProduct" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">是否確認購買<span></span></h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">×</span>
+										</button>
 									</div>
-									<hr>
-								</li>
-								<li>
-									<div class="row flex-column">
-										<div class="col py-2">
-											<p>上架時間：<span>2020/12/1 18:00</span></p>
-											<div class="d-flex align-items-center">
-												拍賣品項：
-												<span class="badge badge-info p-2">重消金</span>
-												<p class="px-2"><span>2000.00</span> USDT </p>
-											</div>
-										</div>
-										<div class="col pt-3 align-self-center text-right">
-											<h6>
-												售價：
-												<span>2100.00</span> USDT
-											</h6>
-											<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#buyProduct">
-												購買
-											</button>
-										</div>
+									<div class="modal-body">
+										<p>購買重消金：100</p>
+										<p>需支付重消金：110</p>
+										<p>確定購買後將無法取消，若購買完成後資料有誤，請立即聯絡管理員，讓管理員協助處理。</p>
 									</div>
-									<hr>
-								</li>
-							</ul>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+										<button type="button" class="btn btn-primary">確定購買</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- modal_sell -->
+						<div class="modal fade" id="sellProduct" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">是否確認賣出<span></span></h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">×</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<p>賣出重消金：100</p>
+										<p>需支付重消金：110</p>
+										<p>確定賣出後將無法取消，若賣出完成後資料有誤，請立即聯絡管理員，讓管理員協助處理。</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+										<button type="button" class="btn btn-primary">確定購買</button>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<!-- modal -->
-				<div class="modal fade" id="buyProduct" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">是否確認購買<span></span></h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body">
-								<p>購買重消金：100</p>
-								<p>需支付重消金：110</p>
-								<p>確定購買後將無法取消，若購買完成後資料有誤，請立即聯絡管理員，讓管理員協助處理。</p>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-								<button type="button" class="btn btn-primary">確定購買</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- 分頁 -->
-				<nav class="d-flex justify-content-center">
-					<ul class="pagination">
-						<li class="page-item">
-							<a class="page-link" href="#" aria-label="Previous">
-								<span aria-hidden="true">&laquo;</span>
-							</a>
-						</li>
-						<li class="page-item"><a class="page-link" href="#">1</a></li>
-						<li class="page-item"><a class="page-link" href="#">2</a></li>
-						<li class="page-item"><a class="page-link" href="#">3</a></li>
-						<li class="page-item">
-							<a class="page-link" href="#" aria-label="Next">
-								<span aria-hidden="true">&raquo;</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
 			</div>
 		</div>
 	</main>
