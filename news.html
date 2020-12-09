@@ -8,10 +8,11 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="generator" content="">
-  <title>個人資訊</title>
+  <title>首頁</title>
 
   <!-- manifest meta -->
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="manifest.json" />
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="img/favicon180.png" sizes="180x180">
@@ -32,7 +33,7 @@
   <link rel="stylesheet" href="css/all.css">
 </head>
 
-<body class="body-scroll d-flex flex-column h-100 menu-overlay" data-page="profile">
+<body class="body-scroll d-flex flex-column h-100 menu-overlay" data-page="homepage">
   <!-- screen loader -->
   <div class="container-fluid h-100 loader-display">
     <div class="row h-100">
@@ -186,218 +187,26 @@
       </div>
     </header>
 
-    <!-- page content start -->
     <div class="main-container">
+      <!-- Swiper -->
       <div class="container mb-4">
-        <div class="card">
-          <div class="card-header">拍賣平台</div>
-          <div class="card-body text-center">
-            <div class="row justify-content-equal no-gutters">
-              <div class="col-4 col-md-2 mb-3">
-                <a href="auction.html" class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><span
-                    class="material-icons">book_online</span></a>
-                <p class="text-secondary"><small>拍賣市場</small></p>
-              </div>
-              <div class="col-4 col-md-2 mb-3">
-                <a href="auction_sell.html" class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><span
-                    class="material-icons">add_business</span></a>
-                <p class="text-secondary"><small>我要拍賣</small></p>
-              </div>
-              <div class="col-4 col-md-2 mb-3">
-                <a href="auction_buy.html" class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><span
-                    class="material-icons">add_business</span></a>
-                <p class="text-secondary"><small>我要收購</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container mb-4">
-        <!-- 我要拍賣 -->
-        <div class="card">
-          <div class="card-body">
-            <div class="border p-2">
-              <label for="">拍賣規則：</label>
-              <p class="mb-0">(1) 會員USDT須超過 100 USDT才可申請拍賣。</p>
-              <p class="mb-0">(2) 拍賣手續費<span class="bg-danger text-white px-2">10%</span>由會員負擔。</p>
-              <p class="mb-0">(3) 因IE瀏覽器與系統相容狀況不良，請會員盡量使用不同的瀏覽器開啟本系統。</p>
-              <p class="mb-0">(4) 會員所填寫資料若不完整或錯誤者，導致無法正常匯出而造成交易不成功，系統管理員確認完畢後
-                ，將直接取消此次交易，原扣除之USDT則會補回會員帳號。</p>
-            </div>
-            <div class="py-3">
-              <label for="">拍賣：</label>
-              <select class="p-2" id="">
-                <option selected disabled></option>
-                <option>USDT</option>
-                <option>註冊金</option>
-                <option>購物金</option>
-              </select>
-              <br><br>
-              <select class="p-2" id="">
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-              </select>
-              <label for="">萬</label>
-              <select class="p-2" id="">
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-              </select>
-              <label for="">千</label>
-              <select class="p-2" id="">
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-              </select>
-              <label for="">百</label>
-              <select class="p-2" id="">
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-              </select>
-              <label for="">十</label>
-              <select class="p-2" id="">
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-              </select>
-              <label for="">個</label>
-            </div>
-            <form class="needs-validation" novalidate>
-              <div class="form-group">
-                <label for="">賣出價格：</label>
-                <input type="text" class="form-control" id="" placeholder="請輸入賣出價格" required>
-                <div class="invalid-feedback">
-                  請輸入此欄位
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="">二級密碼</label>
-                <input type="password" class="form-control" id="" placeholder="" required>
-                <div class="invalid-feedback">
-                  請輸入此欄位
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="">驗證碼</label>
-                <input type="text" class="form-control" id="" placeholder="" required>
-                <div class="invalid-feedback">
-                  請輸入此欄位
-                </div>
-              </div>
-              <div class="form-group">
-                <span class="help-inline">
-                  <img src="" width="71" height="24">
-                </span>
-              </div>
-              <div class="form-group text-right">
-                <button type="submit" class="btn btn-primary btn-sm">送出申請</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- 紀錄 -->
-        <div class="py-5">
-          <div class="card">
-            <div class="card-header pb-0">
-              <p>我的拍賣：</p>
-              <hr>
-            </div>
-            <div class="card-body">
-              <ul class="list-unstyled">
-                <li>
-                  <div class="row">
-                    <div class="col-4">
-                      <div class="py-2">
-                        <h6>2020/12/1</h6>
-                        <h6>18:00</h6>
-                      </div>
-                    </div>
-                    <div class="col-8 align-self-center">
-                      <span class="badge badge-secondary p-2 my-3">拍賣中</span>
-                      <h6>
-                        拍賣USDT：-
-                        <span>2000.00</span>
-                      </h6>
-                    </div>
-                  </div>
-                  <hr>
-                </li>
-                <li>
-                  <div class="row">
-                    <div class="col-4">
-                      <div class="py-2">
-                        <h6>2020/12/1</h6>
-                        <h6>18:00</h6>
-                      </div>
-                    </div>
-                    <div class="col-8 align-self-center">
-                      <span class="badge badge-secondary p-2 my-3">拍賣中</span>
-                      <h6>
-                        拍賣USDT：-
-                        <span>2000.00</span>
-                      </h6>
-                    </div>
-                  </div>
-                  <hr>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <nav class="d-flex justify-content-center">
-          <ul class="pagination">
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
+        <h6 class="subtitle text-center">最新消息</h6>
+        <div class="row justify-content-equal no-gutters">
+          <ul class="list-unstyled news_space">
+            <li>
+              <span class="badge badge-info">2020-12-1</span>
+              <a href="#" class="px-3">WTNS 正式上線！</a>
             </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
+            <li>
+              <span class="badge badge-info">2020-12-1</span>
+              <a href="#" class="px-3">WTNS 正式上線！</a>
+            </li>
+            <li>
+              <span class="badge badge-info">2020-12-1</span>
+              <a href="#" class="px-3">WTNS 正式上線！</a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </div>
   </main>
@@ -406,7 +215,7 @@
   <div class="footer">
     <div class="row no-gutters justify-content-center">
       <div class="col-auto">
-        <a href="index.html" class="">
+        <a href="index.html" class="active">
           <i class="material-icons">home</i>
           <p>首頁</p>
         </a>
@@ -431,6 +240,8 @@
       </div>
     </div>
   </div>
+
+
   <!-- color settings style switcher -->
   <div class="color-picker">
     <div class="row">
@@ -439,7 +250,7 @@
           <input type="checkbox" id="darklayout" name="darkmode">
           <label for="darklayout">Dark</label>
         </div>
-        <div class="selectoption ">
+        <div class="selectoption mb-0">
           <input type="checkbox" id="rtllayout" name="layoutrtl">
           <label for="rtllayout">RTL</label>
         </div>
@@ -509,6 +320,9 @@
     </div>
   </div>
 
+
+
+
   <!-- Required jquery and libraries -->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -524,11 +338,11 @@
   <script src="js/main.js"></script>
   <script src="js/color-scheme-demo.js"></script>
 
+  <!-- PWA app service registration and works -->
+  <script src="js/pwa-services.js"></script>
 
   <!-- page level custom script -->
-  <script src="js/validated.js"></script>
   <script src="js/app.js"></script>
-
 </body>
 
 </html>
